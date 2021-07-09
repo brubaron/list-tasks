@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gerenciador de Tarefas</title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <head>
+    <section class="caixa">
+      <form class="caixa__campos">
+         <h1 class="caixa__campos___titulo">Gerenciador de Tarefas</h1>
+         <input class="caixa__campos___form" type="text" placeholder="Adicione sua tarefa aqui" data-form-input>
+         <input class="caixa__campos___data" type="datetime-local" data-form-date>
+         <input class="caixa__campos___button" type="submit" class="buttonForm" value="+" data-form-button>
+      </form>
+      <div class="caixa__tarefas">
+         <ul class="caixa__tarefas___lista" data-list>
+         <!-- espaço onde será add o novos itens -->
+         </ul>
+      </div>
+    </section>
+  </head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
